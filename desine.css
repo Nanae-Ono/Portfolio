@@ -242,6 +242,14 @@
     .top-wrapper h1,.top-wrapper1 h1,.top-wrapper2 h1 {
       font-size: 32px;
     }
+
+    .top-wrapper1 h1{
+      font-size: 32px;
+    }
+
+    .top-wrapper2 h1 {
+      font-size: 32px;
+    }
   
     .heading h2 {
       font-size: 20px;
@@ -255,7 +263,19 @@
       display: block;
     }
   
-    .top-wrapper,.top-wrapper1,.top-wrapper2{
+    .top-wrapper{
+      width: 100%;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    .top-wrapper1{
+      width: 100%;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    .top-wrapper2{
       width: 100%;
       text-align: left;
       font-size: 20px;
