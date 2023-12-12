@@ -249,15 +249,13 @@
   }
   
   @media all and (max-width: 400px) {
-    .top-wrapper h1 {
-      font-size: 24px;
-    }
+    
   
     .menu-icon {
       display: block;
     }
   
-    .top-wrapper{
+    .top-wrapper .top-wrapper1 .top-wrapper2{
       width: 100%;
     }
 
@@ -277,7 +275,7 @@
       text-align: left;
     }
   
-    .top-wrapper h1 .randomMode .areaMode{
+    .top-wrapper h1 .top-wrapper1 h1 .top-wrapper2 h1 .randomMode .areaMode{
       font-size: 20px;
     }
   
@@ -292,6 +290,9 @@
     .trtop{
       font-size: 20px;
     }
+  
+    
+  }
   
     .message-wrapper .btn {
       width: 100%;
