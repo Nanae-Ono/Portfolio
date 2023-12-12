@@ -81,6 +81,10 @@
     margin-bottom: 20px;
   }
   
+  .signup {
+    background-color: #239b76;
+  }
+  
   .profile {
     background-color: #1d2831;
     margin-right: 10px;
@@ -233,20 +237,6 @@
    /*ラジオボタン非表示にする*/
    .tabbox input { display: none; }
   
-  @media all and (max-width: 1000px) {
-    .lesson {
-      width: 50%;
-      margin-bottom: 50px;
-    }
-  
-    .lesson-wrapper {
-      height: 990px;
-    }
-  
-    footer {
-      text-align: center;
-    }
-  }
   
   @media all and (max-width: 750px) {
     .top-wrapper h1 {
@@ -259,16 +249,18 @@
   }
   
   @media all and (max-width: 400px) {
-    .header-right {
-      display: none;
-    }
+    
   
     .menu-icon {
       display: block;
     }
   
-    .top-wrapper .btn {
+    .top-wrapper{
       width: 100%;
+    }
+
+    .btn {
+      width: 30%;
     }
   
     .maked {
@@ -283,20 +275,20 @@
       text-align: left;
     }
   
-    .top-wrapper h1 {
-      font-size: 24px;
+    .top-wrapper h1 .randomMode .areaMode{
+      font-size: 20px;
     }
   
     .top-wrapper p {
-      font-size: 14px;
+      font-size: 12px;
     }
-  
-    .lesson {
-      width: 100%;
+
+    .text-wrapper p {
+      font-size: 12px;
     }
-  
-    .lesson-wrapper {
-      height: 1700px;
+
+    .trtop{
+      font-size: 20px;
     }
   
     .message-wrapper .btn {
