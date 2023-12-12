@@ -239,7 +239,7 @@
   
   
   @media all and (max-width: 750px) {
-    .top-wrapper h1,.top-wrapper1 h1,.top-wrapper2 h1 {
+    .top-wrapper h1 {
       font-size: 32px;
     }
 
@@ -252,6 +252,14 @@
     }
   
     .heading h2 {
+      font-size: 20px;
+    }
+
+    .randomMode{
+      font-size: 20px;
+    }
+
+    .areaMode{
       font-size: 20px;
     }
   }
@@ -291,10 +299,6 @@
 
     .profile {
       margin-top: 10px;
-    }
-  
-    .top-wrapper h1,.top-wrapper1 h1,.top-wrapper2 h1{
-      font-size: 20px;
     }
   
     .top-wrapper p {
