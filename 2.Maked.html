@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ | Nanae Ono</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="desine.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="0.TopPage.html">TOPページ</a>
+        <a href="1.Profile.html">プロフィール</a>
+        <a href="2.Maked.html">制作物</a>
+      </div>
+    </div>
+  </header>
+  <div class="top-wrapper2">
+    <div class="container">
+      <h1>制作物</h1>
+      <div class="tabbox">
+        <input type="radio" name="tabset" id="tabcheck1" checked><label for="tabcheck1" class="tab">AR動物回収アプリ</label>
+        <input type="radio" name="tabset" id="tabcheck2"        ><label for="tabcheck2" class="tab">タブ2</label>
+        <input type="radio" name="tabset" id="tabcheck3"        ><label for="tabcheck3" class="tab">このホームページ</label>
+        <div class="tabcontent" id="tabcontent1">
+          <h1>AR動物回収アプリ</h1>
+          
+          <img src="AR動物回収アプリ(1).png" alt="AR動物回収アプリ(1).png1" width=100% height=100%>
+          
+          <h1>制作時の工夫</h1>
+          <p class="randomMode">動物たちのランダム移動とタップされた際の処理</p>
+            <p class="p2">
+              動物たちをタップするとタップをトリガーにして、ランダム関数を使用した瞬間移動メソッドが起動するようなスクリプトを組みました。<br>
+              また、タップ時の処理でSEの再生とポイントを得点へ加算するメソッドも併せて組み込んでいます。
+            </p>
+            <br>コード
+            <br>【AnimalPointScript.cs】
+          <script src="https://gist.github.com/Nanae-Ono/152c3f6f5f1b047950ac080a4487d6ad.js"></script>
+          <p class="randomMode">ランキング機能コード</p>
+            <p class="p2">
+              PlayerPrefsというライブラリ機能を使用してみたいと思い実装しました。
+              <br>使用すると自動的に端末内にフォルダを作成しデータを格納します。
+              <br>使用できるデータはInt、String、Floatの3つのみでKey（鍵）を設定してデータを呼び出すというものになります。
+              <br>ランダムモードの中で一番のこだわりです。
+            </p>
+            <br>コード
+            <br>【Ranking.cs】
+          <script src="https://gist.github.com/Nanae-Ono/00ff0635b1275e8fe89ec8bb4d80bf27.js"></script>
+          <p class="areaMode">エリア撮影機能</p>
+            <p class="p2">
+              ARマーカー登録に関する機能です。
+              <br>アプリ上でUIを非表示にし撮影を行うことができます。
+              <br>撮影したデータは一度別クラスの変数へ代入し別シーンにてARマーカー登録できるように組みました。
+              <br>UIでマーカー用画像を指定するのではなく、スクリプトを記入して登録できるようにしました。
+            </p>
+            <br>コード
+            <br>【TakePhoto.cs】
+          <script src="https://gist.github.com/Nanae-Ono/6b4f05ec9287892f840889920eae9cfe.js"></script>
+          <p class="areaMode">動物たちのランダム出現コード</p>
+            <p class="p2">
+              ARマーカー上に表示させる動物は、Unityにて設定を行うと種類が固定されてしまいます。
+              <br>ですので、ARマーカーを認識したタイミングで動物たちをランダムで選択し１体だけ表示できるようなスクリプトを作成し実装しました。
+            </p>
+            <br>コード
+            <br>【AnimalSelectScript.cs】
+          <script src="https://gist.github.com/Nanae-Ono/2b996d58fe6ac79d3b2838594dc0279b.js"></script>
+        </div>
+        <div class="tabcontent" id="tabcontent2">タブ2の中身
+    
+    
+    
+        </div>
+        <div class="tabcontent" id="tabcontent3">タブ3の中身
+    
+    
+        </div>
+      </div> 
+    </div> 
+  </div>
+    
+</body>
+</html>

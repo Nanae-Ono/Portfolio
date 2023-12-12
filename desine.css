@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "07にくまるフォント","ヒラギノ角ゴ ProN";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .top-wrapper {
+    padding: 180px 0 120px 0;
+    background-image: url(TopPageBackGround.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+
+  .top-wrapper1 {
+    padding: 100px 0 30px 0;
+    background-image: url(ProfileBackGround.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .top-wrapper1 h1 {
+    opacity: 0.7;
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+
+  .top-wrapper2 {
+   padding: 100px 0 0px 0;
+    background-image: url(MakedBackGround.png);
+    background-size: 100%,100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 248, 205);
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .top-wrapper2 h1 {
+    opacity: 0.7;
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.7;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .btn-wrapper {
+    text-align: center;
+  }
+  
+  .btn-wrapper p {
+    margin-bottom: 20px;
+  }
+  
+  .signup {
+    background-color: #239b76;
+  }
+  
+  .profile {
+    background-color: #1d2831;
+    margin-right: 10px;
+  }
+  
+  .maked {
+    background-color: #1d2831;
+  }
+  
+  .btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34,49,52,0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255,255,255,0.3);
+  }
+  
+  .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #b3aeb5;
+  }
+
+  .text-wrapper{
+    text-align:center;
+    padding:20px 0;
+  }
+
+  .trtop{
+    font-size: 30px;
+  }
+  
+  .heading h3 {
+    font-weight: normal;
+  }
+  
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+  
+  .clear {
+    clear: left;
+  }
+  
+   /* ▼タブ(共通装飾＋非選択状態の装飾) */
+   .tab {
+      display: inline-block;          /* インラインブロック化 */
+      border-width: 0;  /* 枠線なし */
+      border-radius: 0.75em 0.75em 0px 0px;  /* 左上と右上の角だけを丸くする */
+      padding: 0.75em 1em;            /* 内側の余白量 */
+      color: black;                   /* タブの文字色：黒色 */
+      background-color: #e0e0e0;      /* タブの(非選択状態の)背景色：灰色 */
+   }
+
+   /* ▼タブにマウスポインタが載った際の装飾 */
+   .tab:hover {
+      color: rgb(255, 255, 255);                  /* タブの文字色：赤色 */
+      background-color: rgb(106, 120, 168);   /* タブの背景色：淡い黄色 */
+      
+      cursor: pointer;             /* マウスポインタの形状を「指(指し示す形)」にする */
+   }
+
+   /* ▼選択状態のタブ(＝チェックが入っているラジオボタンの隣にあるタブの装飾) */
+   input:checked + .tab {
+    color: rgb(224, 35, 101);                /* タブの文字色：緑色 */
+    background-color: #ffffff;   /* タブの背景色：淡い緑色 */
+   }
+
+    /* ▼タブの中身(共通装飾＋非選択状態の装飾) */
+    .tabcontent {
+      display: none;              /* 標準では非表示にする */
+      border: 0px;                /* 枠線なし　*/
+      padding: 1em;               /* 内側の余白量 */
+      background-color: rgb(255, 255, 255); /* 背景色：淡い黄色(※選択中のタブの背景色と合わせます) */
+   }
+
+    .randomMode{
+      font-size: 40px;
+      color: rgb(186, 84, 119);    
+    }
+
+    .areaMode{
+      font-size: 40px;
+      color: rgb(70, 131, 83);    
+    }
+
+    .p2{
+      font-size: 20px;
+      text-align:left;
+    }
+   
+
+   /* ▼チェックが入っているラジオボタンに対応するタブの中身を表示する */
+   #tabcheck1:checked ~ #tabcontent1 { display: block; }
+   #tabcheck2:checked ~ #tabcontent2 { display: block; }
+   #tabcheck3:checked ~ #tabcontent3 { display: block; }
+
+   /*ラジオボタン非表示にする*/
+   .tabbox input { display: none; }
+  
+  @media all and (max-width: 1000px) {
+    .lesson {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+  
+    .lesson-wrapper {
+      height: 990px;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
+  
+  @media all and (max-width: 750px) {
+    .top-wrapper h1 {
+      font-size: 32px;
+    }
+  
+    .heading h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media all and (max-width: 670px) {
+    .header-right {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .top-wrapper .btn {
+      width: 100%;
+    }
+  
+    .twitter {
+      margin-top: 10px;
+    }
+  
+    .top-wrapper {
+      text-align: left;
+    }
+  
+    .top-wrapper h1 {
+      font-size: 24px;
+    }
+  
+    .top-wrapper p {
+      font-size: 14px;
+    }
+  
+    .lesson {
+      width: 100%;
+    }
+  
+    .lesson-wrapper {
+      height: 1700px;
+    }
+  
+    .message-wrapper .btn {
+      width: 100%;
+    }
+  }
