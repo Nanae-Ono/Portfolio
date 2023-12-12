@@ -271,8 +271,9 @@
       margin-top: 10px;
     }
   
-    .top-wrapper {
+    .top-wrapper .top-wrapper1 .top-wrapper2{
       text-align: left;
+        font-size: 20px;
     }
   
     .top-wrapper h1 .top-wrapper1 h1 .top-wrapper2 h1 .randomMode .areaMode{
