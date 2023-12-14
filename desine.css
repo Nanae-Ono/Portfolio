@@ -262,6 +262,14 @@
     .areaMode{
       font-size: 20px;
     }
+    
+    .p2{
+      font-size: 15px;
+    }
+
+    .makedtr{
+    font-size: 20px;
+  }
   }
   
   @media all and (max-width: 400px) {
