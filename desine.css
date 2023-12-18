@@ -233,6 +233,8 @@
    #tabcheck1:checked ~ #tabcontent1 { display: block; }
    #tabcheck2:checked ~ #tabcontent2 { display: block; }
    #tabcheck3:checked ~ #tabcontent3 { display: block; }
+   #tabcheck4:checked ~ #tabcontent4 { display: block; }
+   #tabcheck5:checked ~ #tabcontent5 { display: block; }
 
    /*ラジオボタン非表示にする*/
    .tabbox input { display: none; }
