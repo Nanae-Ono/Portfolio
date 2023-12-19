@@ -272,6 +272,8 @@
     .makedtr{
     font-size: 15px;
   }
+      .tabbox{
+          font-size: 30%;
   }
   
   @media all and (max-width: 400px) {
