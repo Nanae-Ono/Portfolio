@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制作物：五目並べ | Nanae Ono</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="desine.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-right">
+        <a href="index.html">TOPページ</a>
+        <a href="1.Profile.html">プロフィール</a>
+        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">制作物</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="2.Maked.html">AR動物回収アプリ</a></li>
+            <li><a class="dropdown-item" href="3.Maked2nd.html">五目並べ</a></li>
+          </ul>
+      </div>
+    </div>
+  </header>
+  <div class="top-wrapper2">
+    <div class="container">
+      <h1>制作物</h1>
+    
+      <div class="tabbox">
+        <input type="radio" name="tabset" id="tabcheck1" checked><label for="tabcheck1" class="tab">概要</label>
+        <input type="radio" name="tabset" id="tabcheck3"        ><label for="tabcheck3" class="tab">動作画面</label>
+        <input type="radio" name="tabset" id="tabcheck4"        ><label for="tabcheck4" class="tab">工夫した点</label>
+        <input type="radio" name="tabset" id="tabcheck5"        ><label for="tabcheck5" class="tab">苦労した点</label>
+       
+        <div class="tabcontent" id="tabcontent1">
+          <h1>五目並べ</h1>
+          <table align="center" class="makedtr">
+            <tr>
+              <td>開発環境</td><td>　</td><td>Eclipse IDE for Java Developers</td>
+            </tr>
+            <tr>
+              <td>　</td><td>　</td><td>Version: 2022-12 (4.26.0)</td>
+            </tr>
+          </table>
+          
+          <img src="goishi.png" alt="goishi.png" width=50% height=50%>
+          
+          <p class="randomMode">Javaを使用した一般的な五目並べゲームを制作</p>
+            <p class="p2">
+                盤上に縦・横・斜め上に５つ石を並べた方が勝ちとなるゲームである。<br>
+                本ソフトウェアでは、黒石（●）と白石（○）の二人対戦とし、碁盤の座標を入力することで石を置くことができるものとする。<br>
+                
+                <br>
+                【基本ルール】
+                <ol class="p2">
+	                <li>石が置かれていない場所であれば、どこでも石を置くことができる。</li>
+	                <li>縦・横・斜めのいずれか一直線上に５個並べたら勝ちとする。</li>
+	                <li>決着がつかない場合（碁盤が埋まった場合）引き分けとする。</li>
+	                <li>黒石（●）を先行とする。</li>
+	                <li>禁じ手やハンデ等はなしとする。</li>
+	                <li>碁盤は１０×１０マスとする。</li>
+                </ol>
+            </p>
+        </div>
+        
+        <div class="tabcontent" id="tabcontent3">
+            <h1>動作画面</h1>
+                <p class="randomMode">起動時</p>
+                <img src="Java画像/1開始画面.png" alt="1開始画面.png" width=100% height=100% border="3">  
+                <p class="p2">
+                    た。<br>
+                    ます。
+                </p><br>
+                <p class="randomMode">碁石をおけるか判断する</p>
+                <img src="Java画像/3配置できるかチェック.png" alt="1開始画面.png" width=100% height=100% border="3">  
+                <p class="p2">
+                    た。<br>
+                    ます。
+                </p><br>
+                <p class="randomMode">碁盤の空き状況判断</p>
+                <img src="Java画像/4碁盤の空き状況.png" alt="1開始画面.png" width=100% height=100% border="3">  
+                <p class="p2">
+                    た。<br>
+                    ます。
+                </p><br>
+                <p class="randomMode">黒石の勝ち</p>
+                <img src="Java画像/5黒の勝ち.png" alt="1開始画面.png" width=100% height=100% border="3">  
+                <p class="p2">
+                    た。<br>
+                    ます。
+                </p><br>
+                <p class="randomMode">白石の勝ち</p>
+                <img src="Java画像/６白の勝ち.png" alt="1開始画面.png" width=100% height=100% border="3">  
+                <p class="p2">
+                    た。<br>
+                    ます。
+                </p><br>
+    
+    
+        </div>
+        <div class="tabcontent" id="tabcontent4">
+            <h1>工夫した点</h1>
+            <br>
+            <p class="areaMode">入力した数値が0-9の間かどうかを判断するメソッド</p>
+            <p class="p2">while文を使用し、何度でも繰り返すことができるメソッドにしました。
+            </p>
+            <img src="Java画像/２入力数値指定.png" alt="1開始画面.png" width=100% height=100% border="3"> 
+            
+            <br>
+            <br>
+            <h2">コード【static int scn_checker(String jiku, int scn_no)】</h2>
+            <script src="https://gist.github.com/Nanae-Ono/cf1cd0c953f2da1a5066ed895cb5954b.js"></script>
+            <br>
+            <p class="randomMode">碁石を格納した位置を基準として<br>８方向に向けて石を数えるメソッド</p>
+            <p class="p2">初回制作時は、配列内すべてをチェックするようなスクリプトを使用しておりましたが、制作しなおした際に現在の形に変更しました。
+            </p>
+            <br>
+            <br>
+            <h2">コード【static int tate_judge(int tate, int yoko, String[][] goban, String goishi)】</h2>
+            <script src="https://gist.github.com/Nanae-Ono/0d96907c9ecfe15fbc4a4e46b979c57f.js"></script>
+            
+        </div> 
+        <div class="tabcontent" id="tabcontent5">
+            <h1>苦労した点</h1>
+            <p class="areaMode">勝利判定</p>
+            <p class="p2">工夫した点でも記載していた、８方向に向けて石を数えるメソッドがなかなかうまく稼働させられず苦労しました。
+                <br>稼働させられていなかった原因は、引数としてtate,yokoと受け渡す際に+1をし忘れており判定する位置がずれてしまっていたことです。
+            </p>
+            
+        </div> 
+      </div> 
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
