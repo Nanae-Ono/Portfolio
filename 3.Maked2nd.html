@@ -65,23 +65,23 @@
         
         <div class="tabcontent" id="tabcontent3">
             <h1>動作画面</h1>
-                <p class="randomMode">起動時</p>
+                <p class="randomMode"><br>起動時</p>
                 <img src="Java画像/1開始画面.png" alt="1開始画面.png" width=100% height=100% border="3">  
                 <br>
 		<br>
-                <p class="randomMode">碁石をおけるか判断する</p>
+                <p class="randomMode"><br>碁石をおけるか判断する</p>
                 <img src="Java画像/3配置できるかチェック.png" alt="1開始画面.png" width=100% height=100% border="3">  
                 <br>
 		<br>
-                <p class="randomMode">碁盤の空き状況判断</p>
+                <p class="randomMode"><br>碁盤の空き状況判断</p>
                 <img src="Java画像/4碁盤の空き状況.png" alt="1開始画面.png" width=100% height=100% border="3">  
                 <br>
 		<br>
-                <p class="randomMode">黒石の勝ち</p>
+                <p class="randomMode"><br>黒石の勝ち</p>
                 <img src="Java画像/5黒の勝ち.png" alt="1開始画面.png" width=100% height=100% border="3">  
                 <br>
 		<br>
-                <p class="randomMode">白石の勝ち</p>
+                <p class="randomMode"><br>白石の勝ち</p>
                 <img src="Java画像/６白の勝ち.png" alt="1開始画面.png" width=100% height=100% border="3">  
                <br>
     
@@ -91,7 +91,7 @@
             <h1>工夫した点</h1>
             <br>
             <p class="areaMode">入力した数値が0-9の間かどうかを判断するメソッド</p>
-            <p class="p2">while文を使用し、何度でも繰り返すことができるメソッドにしました。
+            <p class="p2">while文を使用し、0-9以外の数値が入力された際に何度でもやり直すことができるメソッドにしました。
             </p>
             <img src="Java画像/２入力数値指定.png" alt="1開始画面.png" width=100% height=100% border="3"> 
             
@@ -113,9 +113,9 @@
             <h1>苦労した点</h1>
             <p class="areaMode">勝利判定</p>
             <p class="p2">工夫した点でも記載していた、８方向に向けて石を数えるメソッドがなかなかうまく稼働させられず苦労しました。
-                <br>稼働させられていなかった原因は、winnerJudgeメソッドへ、　tate、yokoと引数を受け渡す際に+1をし忘れており判定する位置がずれていました。
-		<br>確認作業の際は、winnerJudgeメソッド内で呼び出される角方向のメソッドが返す数値を表示してひとつずつチェックを行いました。
-		<br>エラーが発生しない分、気づくのに時間をかけてしまいました。
+                <br>稼働させられていなかった原因は、winnerJudgeメソッドへ、tate、yokoと引数を受け渡す際に+1をし忘れており判定する位置がずれしまっていた事です。
+		<br>確認・修正作業の際は、winnerJudgeメソッド内で呼び出される各方向のメソッドが返す数値を表示してひとつずつチェックを行いました。
+		<br>エラーが発生しない分、気づくのに時間がかかってしまった点も苦労しました。
             </p>
             
         </div> 
